@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sutariya Bone and Joint Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Google Translate Customization with Tailwind */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        .goog-te-gadget {
+            font-family: inherit !important;
+        }
+
+        /* Remove Google branding */
+        .goog-logo-link,
+        .goog-te-gadget span {
+            display: none !important;
+        }
+
+        /* Main button styling - using Tailwind-like styles */
+        .goog-te-menu-value {
+            padding: 0.5rem 1rem !important;
+            background: #7c3aed !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 0.25rem !important;
+            font-size: 0.875rem !important;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .goog-te-menu-value:hover {
+            background: #6d28d9 !important;
+        }
+
+        .goog-te-menu-value span {
+            color: white !important;
+        }
+
+        /* Dropdown styling */
+        .goog-te-menu-frame {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+            border-radius: 0.25rem !important;
+            border: none !important;
+            margin-top: 0.5rem !important;
+            min-width: 150px !important;
+            position: absolute !important;
+            right: 0 !important;
+            left: auto !important;
+            z-index: 50 !important;
+        }
+
+        .goog-te-menu2 {
+            max-width: 100% !important;
+            width: auto !important;
+            background: white !important;
+            border-radius: 0.25rem !important;
+        }
+
+        .goog-te-menu2-item {
+            padding: 0.5rem 1rem !important;
+            font-size: 0.875rem !important;
+            color: #333 !important;
+        }
+
+        .goog-te-menu2-item:hover {
+            background: #f3f4f6 !important;
+            color: #7c3aed !important;
+        }
+
+        .goog-te-menu2-item-selected {
+            background: #f3f4f6 !important;
+            color: #7c3aed !important;
+        }
+
+        @media (max-width: 768px) {
+            .goog-te-menu-value {
+                padding: 0.5rem !important;
+            }
+
+            .goog-te-menu-frame {
+                width: 100% !important;
+                left: 0 !important;
+                right: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+    <!-- Top Header -->
+    <div class="bg-[linear-gradient(to_right,#164B60,#1B6B93,#4FC0D0)] text-white py-2 px-2 sm:px-4">
+        <div
+            class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-0">
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <span><i class="fas fa-clock mr-1 sm:mr-2"></i>Timing: 8am to 8pm</span>
+            </div>
+            <div
+                class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-xs sm:text-sm text-white">
+                <span>
+                    <a href="tel:+919552552455" class="hover:text-[#1B6B93] transition">
+                        <i class="fas fa-phone mr-1 sm:mr-2"></i>+91 9552552455
+                    </a>
+                </span>
+                <span class="hidden sm:inline">
+                    <a href="mailto:drshekhars.jointreplacement@gmail.com" class="hover:text-[#1B6B93] transition">
+                        <i class="fas fa-envelope mr-1 sm:mr-2"></i>drshekhars.jointreplacement@gmail.com
+                    </a>
+                </span>
+                <div class="flex space-x-3 text-base sm:text-lg">
+                    <a href="https://www.facebook.com" target="_blank"
+                        class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dr.shekhars_boneandjointclinic/profilecard/?igsh=MWw1YXUxdDU5YzB5dQ=="
+                        target="_blank" class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919552552455" target="_blank"
+                        class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-2 sm:px-4 py-2 sm:py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Doctor Info -->
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <img src="img/logo.png" alt="Clinic Logo" class="h-12 w-12 sm:h-16 sm:w-16">
+                    <div>
+                        <h1 class="text-lg sm:text-xl lg:text-2xl font-bold text-[#0D5C75] leading-tight">
+                            Dr.Chandrashekhar Sonawane</h1>
+                        <p class="text-xs sm:text-sm lg:text-base text-[#1B6B93] leading-tight">Orthopaedic & Joint
+                            Replacement Surgeon</p>
+                    </div>
+                </div>
+
+                <!-- Navigation and Translate -->
+                <div class="flex items-center space-x-2 sm:space-x-6">
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden lg:flex space-x-4 xl:space-x-6">
+                        <a href="index.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Home</a>
+                        <a href="about.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">About
+                            Doctor</a>
+                        <a href="facility.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Facility</a>
+                        <a href="services.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Services</a>
+                        <a href="expertise.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Expertise</a>
+                        <a href="contact.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Contact
+                            Us</a>
+                    </nav>
+
+                    <!-- Google Translate - Always Visible -->
+                    <div id="google_translate_element"
+                        class="relative bottom-4 sm:bottom-8 left-1 sm:left-2 w-8 sm:w-8.5"></div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden p-2">
+                    <i class="fas fa-bars text-xl sm:text-2xl"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="lg:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-3 sm:space-y-2">
+                    <a href="index.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Home</a>
+                    <a href="about.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">About Doctor</a>
+                    <a href="facility.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Facility</a>
+                    <a href="services.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Services</a>
+                    <a href="expertise.html"
+                        class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Expertise</a>
+                    <a href="contact.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Contact Us</a>
+                    <div id="google_translate_element_mobile" class="py-2"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Banner Slider -->
+    <section class="relative h-64 sm:h-80 md:h-96 lg:h-[500px] overflow-hidden">
+        <div id="banner-slider" class="flex transition-transform duration-500 ease-in-out h-full">
+            <!-- Banner 1 -->
+            <div class="min-w-full h-full bg-[url('img/banner1.png')] bg-cover bg-center flex items-center">
+                <div class="container mx-auto px-4 sm:px-6">
+                    <div class="text-white max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 leading-tight">
+                            <span class="text-[#D5E5D5]">Joint Replacement</span> Surgery
+                        </h2>
+                        <div class="space-x-2 sm:space-x-5">
+                            <a href="contact.html">
+                                <button
+                                    class="bg-transparent border-2 border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-2xl mt-1 hover:bg-white hover:text-purple-800 transition duration-300 text-sm sm:text-base">
+                                    Contact Us
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 2 -->
+            <div class="min-w-full h-full bg-[url('img/banner2.png')] bg-cover bg-center flex items-center">
+                <div class="container mx-auto px-4 sm:px-6">
+                    <div class="text-white max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 leading-tight">
+                            <span class="text-[#D5E5D5]">Hip Replacement</span> Surgery
+                        </h2>
+                        <div class="space-x-2 sm:space-x-5">
+                            <a href="contact.html">
+                                <button
+                                    class="bg-transparent border-2 border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-2xl mt-1 hover:bg-white hover:text-purple-800 transition duration-300 text-sm sm:text-base">
+                                    Contact Us
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner 3 -->
+            <div class="min-w-full h-full bg-[url('img/banner3.png')] bg-cover bg-center flex items-center">
+                <div class="container mx-auto px-4 sm:px-6">
+                    <div class="text-white max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl">
+                        <h2
+                            class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-2 sm:mb-4 leading-tight">
+                            <span class="text-[#D5E5D5]">Orthopaedic </span>Excellence
+                        </h2>
+                        <div class="space-x-2 sm:space-x-5">
+                            <a href="contact.html">
+                                <button
+                                    class="bg-transparent border-2 border-white text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-2xl mt-1 hover:bg-white hover:text-purple-800 transition duration-300 text-sm sm:text-base">
+                                    Contact Us
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dot Navigation -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+            <button class="dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50" data-slide="0"></button>
+            <button class="dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50" data-slide="1"></button>
+            <button class="dot w-2 h-2 sm:w-3 sm:h-3 rounded-full bg-white opacity-50" data-slide="2"></button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-8 sm:py-12 lg:py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
+                <div class="profile-image-wrapper order-2 md:order-1">
+                    <img src="img/profile.jpg" alt="About Dr. Sutariya"
+                        class="rounded-lg transition-transform duration-300 ease-in-out hover:scale-105 w-full max-w-xs sm:max-w-sm mx-auto object-cover">
+                </div>
+
+                <div class="order-1 md:order-2">
+                    <h3
+                        class="text-2xl sm:text-3xl lg:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#164B60] to-[#1B6B93] mb-3 sm:mb-4">
+                        Dr. Chandrashekhar Sonawane
+                    </h3>
+
+                    <p class="text-base sm:text-lg text-gray-600 mb-3 sm:mb-4">Consultant Orthopaedic Knee and Hip joint
+                        replacement surgeon</p>
+                    <p class="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
+                        Dr. Chandrashekhar S. Sonawane, a renowned Orthopedic and Joint Replacement Surgeon based in
+                        Pune, extends his expertise across Nashik, Jalgaon, and Nandurbar districts. Known for his
+                        patient-first approach, he combines surgical excellence with a strong emphasis on prevention
+                        over intervention, ensuring holistic and compassionate orthopedic care.
+                    </p>
+                    <a href="about.html"
+                        class="bg-[linear-gradient(to_right,#164B60,#1B6B93)] hover:bg-[linear-gradient(to_right,#1B6B93,#4FC0D0)] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg sm:rounded-xl inline-block text-sm sm:text-base">
+                        About Doctor
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Section -->
+    <section class="py-8 sm:py-12 lg:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center">
+                <div class="order-2 md:order-1">
+                    <h3
+                        class="text-3xl sm:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#164B60] via-[#1B6B93] to-[#4FC0D0] pb-2 text-transparent bg-clip-text mb-4 sm:mb-5">
+                        Our Clinic
+                    </h3>
+
+                    <div class="space-y-3 sm:space-y-4 text-gray-700">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#0D5C75] mr-3 mt-1 flex-shrink-0"></i>
+                            <a href="https://maps.app.goo.gl/TnHUTz3sAprAHR8e7?g_st=aw" target="_blank"
+                                class="text-gray-600 hover:text-blue-600 hover:underline transition-colors duration-200 text-sm sm:text-base">
+                                Dr. Shekhars Bone and Joint Clinic
+                                208, Second floor, crown world, mutkewadi, pune-nashik Hvy, chakan pune 410501
+                            </a>
+                        </div>
+
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-[#0D5C75] mr-3 mt-1 flex-shrink-0"></i>
+                            <a href="https://maps.app.goo.gl/kk4Dk5w5zhRBbKaR8?g_st=aw" target="_blank"
+                                class="text-gray-600 hover:text-blue-600 hover:underline transition-colors duration-200 text-sm sm:text-base">
+                                Dr. Shekhars Bone and Joint Clinic
+                                A- 201, Comfort Zone Next, Baner Balewadi road, Near New Era Bekary baner pune - 411045
+                            </a>
+                        </div>
+
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-[#0D5C75] mr-3 flex-shrink-0"></i>
+                            <span class="text-sm sm:text-base">Mon-Sat: 3pm-8pm</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-[#0D5C75] mr-3 flex-shrink-0"></i>
+                            <a href="tel:+919552552455"
+                                class="text-gray-700 hover:text-blue-600 transition-colors duration-200 text-sm sm:text-base">
+                                +91 95525 52455
+                            </a>
+                        </div>
+                    </div>
+                    <a href="contact.html"
+                        class="bg-[linear-gradient(to_right,#164B60,#1B6B93)] hover:bg-[linear-gradient(to_right,#1B6B93,#4FC0D0)] text-white px-4 sm:px-6 py-2 sm:py-3 mt-4 sm:mt-6 rounded-lg sm:rounded-xl inline-block text-sm sm:text-base">
+                        Book Appointment
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-3 sm:gap-4 order-1 md:order-2">
+                    <!-- Tall vertical card -->
+                    <div class="row-span-2 rounded-lg shadow-[0_8px_16px_rgba(0,0,0,0.6)] overflow-hidden">
+                        <img src="img/aboutclinic.jpg" alt="Clinic Reception" class="w-full h-full object-cover">
+                    </div>
+
+                    <!-- Medium horizontal card -->
+                    <div class="rounded-lg shadow-[0_8px_16px_rgba(0,0,0,0.6)] overflow-hidden">
+                        <img src="img/cabin.jpg" alt="Waiting Area" class="w-full h-32 sm:h-48 object-cover">
+                    </div>
+
+                    <!-- Small square card -->
+                    <div class="rounded-lg shadow-[0_8px_16px_rgba(0,0,0,0.6)] overflow-hidden">
+                        <img src="img/outside.jpg" alt="Medical Equipment" class="w-full h-32 sm:h-48 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Banner -->
+    <section class="bg-[linear-gradient(to_right,#164B60,#1B6B93,#4FC0D0)] py-6 sm:py-8">
+        <div class="container mx-auto px-4 sm:px-6 text-center">
+            <h3 class="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-3 sm:mb-4">Book an Appointment / Call
+            </h3>
+            <a href="tel:+919552552455">
+                <button
+                    class="group bg-white text-[#164B60] px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold text-base sm:text-lg transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#B3EAF2] hover:via-[#D4F1F9] hover:to-[#EAFBFF]">
+                    <i class="fas fa-phone mr-2"></i>Call Now: +91 9552552455
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section class="py-8 sm:py-12 lg:py-16 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h3
+                class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#164B60] via-[#1B6B93] to-[#4FC0D0] mb-8 sm:mb-12">
+                Our Facilities
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-dumbbell text-3xl sm:text-4xl text-purple-600 mb-3 sm:mb-4"></i>
+                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Physiotherapy</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Advanced physiotherapy treatments for faster recovery
+                    </p>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-pills text-3xl sm:text-4xl text-green-600 mb-3 sm:mb-4"></i>
+                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Pharmacy</h4>
+                    <p class="text-sm sm:text-base text-gray-600">In-house pharmacy with all essential medications</p>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-x-ray text-3xl sm:text-4xl text-blue-600 mb-3 sm:mb-4"></i>
+                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">X-ray</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Digital X-ray facility for accurate diagnosis</p>
+                </div>
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-flask text-3xl sm:text-4xl text-red-600 mb-3 sm:mb-4"></i>
+                    <h4 class="text-lg sm:text-xl font-semibold text-gray-800 mb-2">Pathology Lab</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Complete pathology services for comprehensive care</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Panel Members Section -->
+    <section class="py-8 sm:py-12 lg:py-16">
+        <div class="container mx-auto px-4 sm:px-6">
+            <h3
+                class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-[#164B60] via-[#1B6B93] to-[#4FC0D0] mb-8 sm:mb-12">
+                Our Panel Hospitals
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+                <div class="text-center">
+                    <img src="img/deenanth.jpg" alt="Deenanath Mangeshkar Hospital"
+                        class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full shadow-[0_8px_16px_rgba(0,0,0,0.6)] mx-auto mb-4 sm:mb-5 object-cover">
+                    <h4 class="text-lg sm:text-xl font-semibold text-[#164B60] mb-2">Deenanath Mangeshkar Hospital</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Renowned for Cardiology & Critical Care</p>
+                </div>
+                <div class="text-center">
+                    <img src="img/manipal.jpg" alt="Manipal Center"
+                        class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full shadow-[0_8px_16px_rgba(0,0,0,0.6)] mx-auto mb-4 sm:mb-5 object-cover">
+                    <h4 class="text-lg sm:text-xl font-semibold text-[#164B60] mb-2">Manipal Hospital</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Expertise in Diagnostics & Surgical Procedures</p>
+                </div>
+                <div class="text-center">
+                    <img src="img/inamdar.jpg" alt="Inamdar Hospital"
+                        class="w-32 h-32 sm:w-40 sm:h-40 lg:w-48 lg:h-48 rounded-full shadow-[0_8px_16px_rgba(0,0,0,0.6)] mx-auto mb-4 sm:mb-5 object-cover">
+                    <h4 class="text-lg sm:text-xl font-semibold text-[#164B60] mb-2">Inamdar Hospital</h4>
+                    <p class="text-sm sm:text-base text-gray-600">Specialized in Orthopedics & Rehabilitation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Camps -->
+    <section class="py-20 bg-[#f8fafc]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center text-[#164B60] mb-4">Health Camps & Local Visits</h2>
+            <p class="text-center text-gray-600 text-lg mb-12">
+                Our doctor travels to different cities for checkups, camps, and wellness outreach, ensuring personalized
+                care is accessible to all.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-[#0D5C75]">
+                <!-- Pune -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Pune</h3>
+                    <p class="text-sm mt-2">Frequent wellness camps and check-ups across the city.</p>
+                </div>
+
+                <!-- Nashik -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Nashik</h3>
+                    <p class="text-sm mt-2">Personal consultations and healthcare awareness events.</p>
+                </div>
+
+                <!-- Jalgaon -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Jalgaon</h3>
+                    <p class="text-sm mt-2">Outreach programs and on-site checkups for local communities.</p>
+                </div>
+
+                <!-- Nandurbar -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Nandurbar</h3>
+                    <p class="text-sm mt-2">Accessible care through periodic rural health visits.</p>
+                </div>
+
+                <!-- Goa -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Goa</h3>
+                    <p class="text-sm mt-2">Occasional camps and private consultations available.</p>
+                </div>
+
+                <!-- Solapur -->
+                <div
+                    class="bg-gradient-to-br from-[#e6f6fb] via-[#d1f1f9] to-[#c0ecf6] rounded-xl p-6 shadow-md text-center hover:scale-105 transition-transform duration-300">
+                    <h3 class="text-xl font-semibold">Solapur</h3>
+                    <p class="text-sm mt-2">Community outreach for diagnostics and health advice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-10">
+                <!-- Clinic Info -->
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-2">Dr.Chandrashekhar Bone & Joint Clinic</h4>
+                    <p class="text-gray-300 leading-relaxed">Leading orthopedic care with advanced treatment options.
+                    </p>
+                </div>
+
+                <!-- Locations -->
+                <div class="space-y-4 md:ml-16">
+                    <h4 class="text-xl font-semibold mb-2">Clinic Locations</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li>
+                            <a href="https://maps.app.goo.gl/HGUPLBcdZh1KMU8q8?g_st=ac" target="_blank"
+                                class="hover:text-[#9ACBD0] transition flex items-start">
+                                <span class="mr-2">•</span><span>Chakan</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/kk4Dk5w5zhRBbKaR8?g_st=aw" target="_blank"
+                                class="hover:text-[#9ACBD0] transition flex items-start">
+                                <span class="mr-2">•</span><span>Baner</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://maps.app.goo.gl/TnHUTz3sAprAHR8e7?g_st=aw" target="_blank"
+                                class="hover:text-[#9ACBD0] transition flex items-start">
+                                <span class="mr-2">•</span><span>Wakad</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="space-y-4 md:ml-12">
+                    <h4 class="text-xl font-semibold mb-2">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-300">
+                        <li><a href="index.html" class="hover:text-[#9ACBD0] transition block">Home</a></li>
+                        <li><a href="about.html" class="hover:text-[#9ACBD0] transition block">About</a></li>
+                        <li><a href="services.html" class="hover:text-[#9ACBD0] transition block">Services</a></li>
+                        <li><a href="facility.html" class="hover:text-[#9ACBD0] transition block">Facilities</a></li>
+                        <li><a href="expertise.html" class="hover:text-[#9ACBD0] transition block">Expertise</a></li>
+                        <li><a href="contact.html" class="hover:text-[#9ACBD0] transition block">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="space-y-4">
+                    <h4 class="text-xl font-semibold mb-2">Contact Info</h4>
+                    <div class="space-y-3 text-gray-300">
+                        <p>
+                            <a href="tel:+919552552455" class="hover:text-[#9ACBD0] transition flex items-center">
+                                <i class="fas fa-phone mr-3 w-5"></i>+91 9552552455
+                            </a>
+                        </p>
+                        <p>
+                            <a href="mailto:drshekhars.jointreplacement@gmail.com"
+                                class="hover:text-[#9ACBD0] transition flex items-center">
+                                <i class="fas fa-envelope mr-3 w-5"></i>drshekhars.jointreplacement@gmail.com
+                            </a>
+                        </p>
+                        <div class="flex space-x-5 pt-2 text-xl">
+                            <a href="https://www.facebook.com" target="_blank" class="hover:text-[#9ACBD0] transition">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com" target="_blank" class="hover:text-[#9ACBD0] transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://wa.me/919552552455" target="_blank"
+                                class="hover:text-[#9ACBD0] transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Dr.Chandrashekhar S Bone and Joint Clinic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facility - Dr. Sutariya Bone and Joint Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Google Translate Customization with Tailwind */
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+
+        .goog-te-gadget {
+            font-family: inherit !important;
+        }
+
+        /* Remove Google branding */
+        .goog-logo-link,
+        .goog-te-gadget span {
+            display: none !important;
+        }
+
+        /* Main button styling - using Tailwind-like styles */
+        .goog-te-menu-value {
+            padding: 0.5rem 1rem !important;
+            background: #7c3aed !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 0.25rem !important;
+            font-size: 0.875rem !important;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .goog-te-menu-value:hover {
+            background: #6d28d9 !important;
+        }
+
+        .goog-te-menu-value span {
+            color: white !important;
+        }
+
+        /* Dropdown styling */
+        .goog-te-menu-frame {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+            border-radius: 0.25rem !important;
+            border: none !important;
+            margin-top: 0.5rem !important;
+            min-width: 150px !important;
+            position: absolute !important;
+            right: 0 !important;
+            left: auto !important;
+            z-index: 50 !important;
+        }
+
+        .goog-te-menu2 {
+            max-width: 100% !important;
+            width: auto !important;
+            background: white !important;
+            border-radius: 0.25rem !important;
+        }
+
+        .goog-te-menu2-item {
+            padding: 0.5rem 1rem !important;
+            font-size: 0.875rem !important;
+            color: #333 !important;
+        }
+
+        .goog-te-menu2-item:hover {
+            background: #f3f4f6 !important;
+            color: #7c3aed !important;
+        }
+
+        .goog-te-menu2-item-selected {
+            background: #f3f4f6 !important;
+            color: #7c3aed !important;
+        }
+
+        @media (max-width: 768px) {
+            .goog-te-menu-value {
+                padding: 0.5rem !important;
+            }
+
+            .goog-te-menu-frame {
+                width: 100% !important;
+                left: 0 !important;
+                right: auto !important;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans">
+     <!-- Top Header -->
+    <div class="bg-[linear-gradient(to_right,#164B60,#1B6B93,#4FC0D0)] text-white py-2 px-2 sm:px-4">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center text-xs sm:text-sm gap-2 sm:gap-0">
+            <div class="flex items-center space-x-2 sm:space-x-4">
+                <span class="text-center sm:text-left"><i class="fas fa-clock mr-1 sm:mr-2"></i>Timing: 8am to 8pm</span>
+            </div>
+            <div class="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 text-xs sm:text-sm text-white">
+                <span>
+                    <a href="tel:+919552552455" class="hover:text-[#1B6B93] transition">
+                        <i class="fas fa-phone mr-1 sm:mr-2"></i>+91 9552552455
+                    </a>
+                </span>
+                <span class="hidden sm:inline">
+                    <a href="mailto:drshekhars.jointreplacement@gmail.com" class="hover:text-[#1B6B93] transition">
+                        <i class="fas fa-envelope mr-1 sm:mr-2"></i>drshekhars.jointreplacement@gmail.com
+                    </a>
+                </span>
+                <div class="flex space-x-3 text-base sm:text-lg">
+                    <a href="https://www.facebook.com/profile.php?id=100077562590540&mibextid=rS40aB7S9Ucbxw6v" target="_blank"
+                        class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/dr.shekhars_boneandjointclinic/profilecard/?igsh=MWw1YXUxdDU5YzB5dQ==" target="_blank" class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                
+                    <a href="https://wa.me/919552552455" target="_blank"
+                        class="text-white hover:text-[#1B6B93] transition">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-2 sm:px-4 py-3 sm:py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo and Doctor Info -->
+                <div class="flex items-center space-x-2 sm:space-x-4">
+                    <img src="img/logo.png" alt="Clinic Logo" class="h-12 w-12 sm:h-16 sm:w-16">
+                    <div>
+                        <h1 class="text-lg sm:text-2xl font-bold text-[#0D5C75]">Dr.Chandrashekhar Sonawane</h1>
+                        <p class="text-sm sm:text-base text-[#1B6B93]">Orthopaedic & Joint Replacement Surgeon</p>
+                    </div>
+                </div>
+
+                <!-- Navigation and Translate -->
+                <div class="flex items-center space-x-2 sm:space-x-6">
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden lg:flex space-x-4 xl:space-x-6">
+                        <a href="index.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Home</a>
+                        <a href="about.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">About Doctor</a>
+                        <a href="facility.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Facility</a>
+                        <a href="services.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Services</a>
+                        <a href="expertise.html"
+                            class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Expertise</a>
+                        <a href="contact.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] text-sm xl:text-base">Contact Us</a>
+                    </nav>
+
+
+                    <!-- Google Translate - Always Visible -->
+                    <div id="google_translate_element" class="relative bottom-4 sm:bottom-8 left-1 sm:left-2 w-8.5"></div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-xl sm:text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav id="mobile-menu" class="lg:hidden hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-2">
+                    <a href="index.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Home</a>
+                    <a href="about.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">About Doctor</a>
+                    <a href="facility.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Facility</a>
+                    <a href="services.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Services</a>
+                    <a href="expertise.html"
+                        class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Expertise</a>
+                    <a href="contact.html" class="text-[#0D5C75] font-semibold hover:text-[#19A7CE] py-2">Contact Us</a>
+                    <div id="google_translate_element_mobile" class="py-2"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- Page Header -->
+    <section class="bg-gradient-to-r from-[#164B60] via-[#1B6B93] to-[#4FC0D0] text-white py-8 sm:py-12 md:py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4">Our Facilities</h1>
+            <p class="text-base sm:text-lg md:text-xl">State-of-the-art medical equipment and comfortable environment</p>
+        </div>
+    </section>
+
+    <!-- Main Facilities -->
+    <section class="py-8 sm:py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+                <div class="bg-gradient-to-br from-[#f0f9ff] to-[#e0f7fa] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-dumbbell text-4xl sm:text-5xl md:text-6xl text-purple-600 mb-4 sm:mb-6"></i>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-[#164B60] mb-2 sm:mb-4">Physiotherapy</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Advanced physiotherapy treatments for faster recovery and
+                        rehabilitation</p>
+                    <ul class="text-xs sm:text-sm text-gray-600 text-left space-y-1 sm:space-y-2 pl-2 sm:pl-4 mx-auto w-fit">
+                        <li>• Modern Exercise Equipment</li>
+                        <li>• Electrotherapy Units</li>
+                        <li>• Manual Therapy</li>
+                        <li>• Specialized Rehabilitation</li>
+                    </ul>
+
+
+                </div>
+
+                <div class="bg-gradient-to-br from-[#f0f9ff] to-[#e0f7fa] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-pills text-4xl sm:text-5xl md:text-6xl text-green-600 mb-4 sm:mb-6"></i>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-[#164B60] mb-2 sm:mb-4">Pharmacy</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">In-house pharmacy with all essential medications and medical supplies
+                    </p>
+                    <ul class="text-xs sm:text-sm text-gray-600 text-left space-y-1 sm:space-y-2 pl-2 sm:pl-4 mx-auto w-fit">
+                        <li>• Prescription Medications</li>
+                        <li>• Medical Supplies</li>
+                        <li>• Orthopedic Aids</li>
+                        <li>• Emergency Medicines</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#f0f9ff] to-[#e0f7fa] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-x-ray text-4xl sm:text-5xl md:text-6xl text-blue-600 mb-4 sm:mb-6"></i>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-[#164B60] mb-2 sm:mb-4">X-ray</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Digital X-ray facility for accurate and immediate diagnosis</p>
+                    <ul class="text-xs sm:text-sm text-gray-600 text-left space-y-1 sm:space-y-2 pl-2 sm:pl-4 mx-auto w-fit">
+                        <li>• Digital X-ray Machine</li>
+                        <li>• Immediate Results</li>
+                        <li>• High Resolution Images</li>
+                        <li>• Minimal Radiation</li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-[#f0f9ff] to-[#e0f7fa] p-4 sm:p-6 md:p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <i class="fas fa-flask text-4xl sm:text-5xl md:text-6xl text-red-600 mb-4 sm:mb-6"></i>
+                    <h3 class="text-lg sm:text-xl md:text-2xl font-semibold text-[#164B60] mb-2 sm:mb-4">Pathology Lab</h3>
+                    <p class="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">Complete pathology services for comprehensive diagnostic care</p>
+                    <ul class="text-xs sm:text-sm text-gray-600 text-left space-y-1 sm:space-y-2 pl-2 sm:pl-4 mx-auto w-fit">
+                        <li>• Blood Tests</li>
+                        <li>• Urine Analysis</li>
+                        <li>• Biochemistry Tests</li>
+                        <li>• Quick Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Equipment Gallery -->
+    <section class="py-8 sm:py-12 md:py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+           <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#164B60] mb-8 sm:mb-12">Our Equipment</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/x-ray.png" alt="X-ray Machine"
+                        class="w-full h-32 sm:h-40 md:h-48 object-cover">
+                    <div class="p-3 sm:p-4">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-800">Digital X-ray Machine</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Latest digital radiography equipment for precise imaging</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/physiotherapy.jpg" alt="Physiotherapy Equipment"
+                        class="w-full h-32 sm:h-40 md:h-48 object-cover">
+                    <div class="p-3 sm:p-4">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-800">Physiotherapy Equipment</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Advanced rehabilitation and exercise equipment</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="img/labs" alt="Pathology Lab Equipment"
+                        class="w-full h-32 sm:h-40 md:h-48 object-cover">
+                    <div class="p-3 sm:p-4">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray-800">Pathology Lab Equipment</h3>
+                        <p class="text-gray-600 text-xs sm:text-sm">Modern Lab Setup Ensuring Quality Care</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 sm:py-12">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
+      <!-- Clinic Info -->
+      <div class="space-y-4">
+        <h4 class="text-lg sm:text-xl font-semibold mb-2">Dr.Chandrashekhar Bone & Joint Clinic</h4>
+        <p class="text-gray-300 leading-relaxed text-sm sm:text-base">Leading orthopedic care with advanced treatment options.</p>
+      </div>
+       
+      <!-- Locations -->
+      <div class="space-y-4 lg:ml-16">
+        <h4 class="text-lg sm:text-xl font-semibold mb-2">Clinic Locations</h4>
+        <ul class="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
+          <li>
+            <a href="https://maps.app.goo.gl/HGUPLBcdZh1KMU8q8?g_st=ac" target="_blank"
+              class="hover:text-[#9ACBD0] transition flex items-start">
+              <span class="mr-2">•</span><span>Chakan</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/kk4Dk5w5zhRBbKaR8?g_st=aw" target="_blank"
+              class="hover:text-[#9ACBD0] transition flex items-start">
+              <span class="mr-2">•</span><span>Baner</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://maps.app.goo.gl/TnHUTz3sAprAHR8e7?g_st=aw" target="_blank"
+              class="hover:text-[#9ACBD0] transition flex items-start">
+              <span class="mr-2">•</span><span>Wakad</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+       
+      <!-- Quick Links -->
+      <div class="space-y-4 lg:ml-12">
+        <h4 class="text-lg sm:text-xl font-semibold mb-2">Quick Links</h4>
+        <ul class="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
+          <li><a href="index.html" class="hover:text-[#9ACBD0] transition block">Home</a></li>
+          <li><a href="about.html" class="hover:text-[#9ACBD0] transition block">About</a></li>
+          <li><a href="services.html" class="hover:text-[#9ACBD0] transition block">Services</a></li>
+          <li><a href="facility.html" class="hover:text-[#9ACBD0] transition block">Facilities</a></li>
+          <li><a href="expertise.html" class="hover:text-[#9ACBD0] transition block">Expertise</a></li>
+          <li><a href="contact.html" class="hover:text-[#9ACBD0] transition block">Contact</a></li>
+        </ul>
+      </div>
+       
+      <!-- Contact Info -->
+      <div class="space-y-4">
+        <h4 class="text-lg sm:text-xl font-semibold mb-2">Contact Info</h4>
+        <div class="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
+          <p>
+            <a href="tel:+919552552455" class="hover:text-[#9ACBD0] transition flex items-center">
+              <i class="fas fa-phone mr-3 w-5"></i>+91 9552552455
+            </a>
+          </p>
+          <p>
+            <a href="mailto:drshekhars.jointreplacement@gmail.com"
+              class="hover:text-[#9ACBD0] transition flex items-start">
+              <i class="fas fa-envelope mr-3 w-5 mt-1"></i>
+              <span class="break-all">drshekhars.jointreplacement@gmail.com</span>
+            </a>
+          </p>
+          <div class="flex space-x-4 sm:space-x-5 pt-2 text-lg sm:text-xl">
+            <a href="https://www.facebook.com" target="_blank" class="hover:text-[#9ACBD0] transition">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="hover:text-[#9ACBD0] transition">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/919552552455" target="_blank" class="hover:text-[#9ACBD0] transition">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+    <!-- Copyright -->
+    <div class="border-t border-gray-700 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-400 text-sm sm:text-base">
+      <p>&copy; 2025 Dr.Chandrashekhar S Bone and Joint Clinic. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+/* Custom styles for the website */
+.dot.active {
+  opacity: 1 !important;
+  background-color: #f97316 !important;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Google Translate Customization - Clean & Branding-Free */
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  font-family: inherit !important;
+}
+
+/* Remove Google branding */
+.goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+
+/* Main button styling */
+.goog-te-menu-value {
+  padding: 8px 12px !important;
+  background: #7c3aed !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  font-size: 14px !important;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.goog-te-menu-value:hover {
+  background: #6d28d9 !important;
+}
+
+.goog-te-menu-value span {
+  color: white !important;
+}
+
+/* Dropdown styling */
+.goog-te-menu-frame {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 4px !important;
+  border: none !important;
+  margin-top: 8px !important;
+}
+
+.goog-te-menu2 {
+  max-width: 100% !important;
+  width: auto !important;
+  background: white !important;
+  border-radius: 4px !important;
+}
+
+.goog-te-menu2-item {
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  color: #333 !important;
+}
+
+.goog-te-menu2-item:hover {
+  background: #f3f4f6 !important;
+  color: #7c3aed !important;
+}
+
+.goog-te-menu2-item-selected {
+  background: #f3f4f6 !important;
+  color: #7c3aed !important;
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .text-4xl {
+    font-size: 2rem;
+  }
+
+  .text-6xl {
+    font-size: 3rem;
+  }
+
+  .grid {
+    gap: 1rem;
+  }
+  
+  /* Make translate button full width on mobile */
+  .goog-te-menu-value {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  
+  .goog-te-menu-frame {
+    width: 100% !important;
+    left: 0 !important;
+  }
+}
+
+/* Animation for banner slider */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.banner-slide {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Hover effects */
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+/* Custom button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #6d28d9, #9333ea);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.3);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(249, 115, 22, 0.3);
+}
+
+/* Card hover effects */
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Loading animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Form styles */
+.form-input {
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+  outline: none;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  background: linear-gradient(135deg, #ffffff, #f8fafc);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 10px 30px rgba(124, 58, 237, 0.1);
+}
+
+/* Statistics counter animation */
+.counter {
+  font-weight: bold;
+  color: #1f2937;
+}
+
+/* Facility icon animations */
+.facility-icon {
+  transition: all 0.3s ease;
+}
+
+.facility-icon:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Navigation active state */
+.nav-active {
+  color: #f97316 !important;
+  font-weight: 600;
+  position: relative;
+}
+
+.nav-active::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #f97316;
+  border-radius: 1px;
+}
+
+/* Mobile menu animation */
+.mobile-menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.mobile-menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+
+/* Footer link hover effects */
+.footer-link:hover {
+  color: #f97316 !important;
+  text-decoration: underline;
+}
+
+/* Banner dot indicators */
+.banner-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.banner-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.banner-dot.active {
+  background: #f97316;
+  transform: scale(1.2);
+}
+
+/* Responsive text sizes */
+@media (max-width: 640px) {
+  .responsive-text-lg {
+    font-size: 1.125rem;
+  }
+
+  .responsive-text-xl {
+    font-size: 1.25rem;
+  }
+
+  .responsive-text-2xl {
+    font-size: 1.5rem;
+  }
+
+  .responsive-text-3xl {
+    font-size: 1.875rem;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+
+  .container {
+    max-width: none;
+    padding: 0;
+  }
+}
