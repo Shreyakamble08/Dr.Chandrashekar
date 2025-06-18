@@ -554,3 +554,6 @@ if (document.readyState === "loading") {
 function initializeWebsite() {
   console.log("Dr. Sutariya website initialized successfully!")
 }
+
+
+//translator
